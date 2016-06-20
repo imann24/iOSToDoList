@@ -34,18 +34,6 @@
                                     <rect key="frame" x="20" y="57" width="263" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j76-qk-w8A">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Add" backgroundImage="button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="305" y="57" width="75" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="addTaskButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSh-HI-6m4"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cig-52-KPw">
                                 <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -61,24 +49,36 @@
                                     <rect key="frame" x="176" y="113" width="49" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j76-qk-w8A">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="291" y="57" width="75" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addTaskButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSh-HI-6m4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zFg-zD-Kau"/>
                                 <exclude reference="oAX-za-K16"/>
-                                <exclude reference="j76-qk-w8A"/>
                                 <exclude reference="cig-52-KPw"/>
                                 <exclude reference="mAC-3J-POu"/>
+                                <exclude reference="j76-qk-w8A"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="zFg-zD-Kau"/>
                                 <include reference="oAX-za-K16"/>
-                                <include reference="j76-qk-w8A"/>
                                 <include reference="cig-52-KPw"/>
                                 <include reference="mAC-3J-POu"/>
+                                <include reference="j76-qk-w8A"/>
                             </mask>
                         </variation>
                     </view>
