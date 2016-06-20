@@ -57,4 +57,8 @@ NSString * const kTasks = @"kTasks";
     [self.tasks addObject:addedTask];
 }
 
+-(void)removeData:(NSString *)taskToRemove {
+    [self.tasks removeObject:taskToRemove];
+}
+
 @end

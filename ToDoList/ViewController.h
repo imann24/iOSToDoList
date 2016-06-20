@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIStackView *taskListStackView;
 -(void)addTaskToView:(NSString *)taskName;
 -(void)populateExistingTasks;
-
+-(void)handleTapToDelete:(UITapGestureRecognizer *)recognizer;
+-(void)addTapToDelete:(UIView *)view;
 @end
 

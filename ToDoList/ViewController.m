@@ -14,6 +14,26 @@
 
 @implementation ViewController
 
+
+// Adapted from: http://stackoverflow.com/questions/4660371/how-to-add-a-touch-event-to-a-uiview
+//The event handling method
+- (void)handleTapToDelete:(UITapGestureRecognizer *)recognizer {
+    UIView *view = recognizer.view;
+    UIView *labelView = [view subviews][0];
+    UILabel *label = (UILabel *)labelView;
+    NSString *viewText = label.text;
+    [[DataHolder sharedInstance] removeData:viewText];
+    [[DataHolder sharedInstance] saveData];
+    [view removeFromSuperview];
+}
+
+- (void)addTapToDelete:(UIView *) view {
+    UITapGestureRecognizer *singleFingerTap =
+    [[UITapGestureRecognizer alloc] initWithTarget:self
+                                            action:@selector(handleTapToDelete:)];
+    [view addGestureRecognizer:singleFingerTap];
+}
+
 - (void)populateExistingTasks {
     NSMutableArray *tasks = [DataHolder sharedInstance].tasks;
     for (int i = 0; i < [tasks count]; i++) {
@@ -49,6 +69,9 @@
     addedTaskUIView.layer.borderWidth = borderWidth;
     
     [addedTaskUIView addSubview:addedTask];
+    
+    [self addTapToDelete:addedTaskUIView];
+    
     [self.taskListStackView addArrangedSubview: addedTaskUIView];
     
 }

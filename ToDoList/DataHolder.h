@@ -18,4 +18,5 @@
 -(void) saveData;
 -(void) loadData;
 -(void) addData:(NSString *)addedTask;
+-(void)removeData:(NSString *)taskToRemove;
 @end
