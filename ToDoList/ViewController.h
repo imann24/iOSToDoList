@@ -12,7 +12,8 @@
 - (IBAction)addTaskButtonClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *addTaskTextField;
 @property (weak, nonatomic) IBOutlet UIStackView *taskListStackView;
-
+-(void)addTaskToView:(NSString *)taskName;
+-(void)populateExistingTasks;
 
 @end
 

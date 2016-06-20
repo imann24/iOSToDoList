@@ -15,6 +15,7 @@
 		60A5E8A61D17677A00A113A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A5E8A41D17677A00A113A7 /* LaunchScreen.storyboard */; };
 		60A5E8B11D17677A00A113A7 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E8B01D17677A00A113A7 /* ToDoListTests.m */; };
 		60A5E8BC1D17677A00A113A7 /* ToDoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E8BB1D17677A00A113A7 /* ToDoListUITests.m */; };
+		60A5E8CA1D17853900A113A7 /* DataHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A5E8C91D17853900A113A7 /* DataHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		60A5E8B71D17677A00A113A7 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A5E8BB1D17677A00A113A7 /* ToDoListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListUITests.m; sourceTree = "<group>"; };
 		60A5E8BD1D17677A00A113A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A5E8C91D17853900A113A7 /* DataHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHolder.m; sourceTree = "<group>"; };
+		60A5E8CB1D17854E00A113A7 /* DataHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHolder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				60A5E8A41D17677A00A113A7 /* LaunchScreen.storyboard */,
 				60A5E8A71D17677A00A113A7 /* Info.plist */,
 				60A5E8961D17677900A113A7 /* Supporting Files */,
+				60A5E8C91D17853900A113A7 /* DataHolder.m */,
+				60A5E8CB1D17854E00A113A7 /* DataHolder.h */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				60A5E89E1D17677900A113A7 /* ViewController.m in Sources */,
 				60A5E89B1D17677900A113A7 /* AppDelegate.m in Sources */,
 				60A5E8981D17677900A113A7 /* main.m in Sources */,
+				60A5E8CA1D17853900A113A7 /* DataHolder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
